@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         val projection = arrayOf(
             MediaStore.Audio.Media.TITLE,
             MediaStore.Audio.Media.DATA,
-            MediaStore.Audio.Media.DURATION
+            MediaStore.Audio.Media.DURATION,
+            MediaStore.Audio.Media.ARTIST
         )
 
         val selection = MediaStore.Audio.Media.IS_MUSIC + " != 0"
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
             while (cursor!!.moveToNext()) {
-                val music = Music(cursor.getString(1), cursor.getString(0), cursor.getString(2))
+                val music = Music(cursor.getString(1), cursor.getString(0), cursor.getString(2), cursor.getString(3))
                 if (File(music.path).exists()) listMusic.add(music)
             }
         } catch (e: Exception) {

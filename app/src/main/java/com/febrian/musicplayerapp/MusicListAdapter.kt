@@ -13,6 +13,7 @@ class MusicListAdapter(private val listMusic: ArrayList<Music>) :
 
         fun bind(music: Music, position: Int) {
             binding.musicTitleText.text = music.title
+            binding.musicArtistText.text = music.artist
 
             itemView.setOnClickListener {
                 MusicMediaPlayer.getInstance().reset()

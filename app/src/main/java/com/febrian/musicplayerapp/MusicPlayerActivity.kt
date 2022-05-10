@@ -67,7 +67,7 @@ class MusicPlayerActivity : AppCompatActivity() {
         currentMusic = listMusic[MusicMediaPlayer.currentIndex]
 
         binding.musicTitle.text = currentMusic.title
-
+        binding.musicArtist.text = currentMusic.artist
         binding.totalTime.text = convertToMMSS(currentMusic.duration)
 
         binding.pausePlay.setOnClickListener { pausePlay() }

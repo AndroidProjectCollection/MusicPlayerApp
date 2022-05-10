@@ -14,7 +14,7 @@
         android:padding="10dp"
         android:text="SONGS"
         android:textColor="@color/purple_500"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"/>
 
     <TextView

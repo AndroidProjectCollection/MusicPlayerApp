@@ -7,5 +7,6 @@ import kotlinx.parcelize.Parcelize
 data class Music(
     val path: String,
     val title: String,
-    val duration: String
+    val duration: String,
+    val artist : String
 ) : Parcelable
