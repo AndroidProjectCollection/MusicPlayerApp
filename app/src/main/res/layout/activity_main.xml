@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <TextView
         android:id="@+id/songs_text"
@@ -13,7 +13,7 @@
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:text="SONGS"
-        android:textColor="@color/purple_500"
+        android:textColor="#2196F3"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
